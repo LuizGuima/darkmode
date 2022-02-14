@@ -1,0 +1,60 @@
+body{
+    transition: .6s;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .6s;
+}
+.dark{
+    background: black;
+    transition: .6s;
+}
+.switch{
+    position: relative;
+    height: 34px;
+    width: 60px;
+    display: inline-block;
+}
+.switch input{
+    display: none;
+    
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: aqua;
+    border-radius: 34px;
+    
+   
+}
+
+.slider::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: pink;
+    border-radius: 50%;
+    transition: .4s;
+}
+.dark .slider::before{
+    transform: translateX(26px);
+    transition: .4s;
+}
